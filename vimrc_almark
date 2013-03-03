@@ -1,0 +1,41 @@
+"================ Personal settings ================
+
+" Encoding
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set langmenu=zh_CN.UTF-8
+language message zh_CN.UTF-8
+
+" Font
+"set guifont=Courier\ New:h12:cANSI
+set guifont=monofur:h12:cANSI
+"colorscheme bensday
+colorscheme neon
+
+" Style
+set nu
+syntax on
+set ai
+set cindent
+set ts=4
+set shiftwidth=4
+set expandtab
+
+" Fold
+set foldenable
+set foldmethod=syntax
+
+""" Plugin
+
+" NERDTree
+autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
+autocmd VimEnter * imap <F3> <Esc>:NERDTreeToggle<CR>a
+let NERDTreeQuitOnOpen=0
+let NERDTreeWinSize=30
+let NERDTreeDirArrows=1
+
+" Mode & pathogen
+set nocompatible
+set nobackup
+execute pathogen#infect()
+"================ Personal settings ================
