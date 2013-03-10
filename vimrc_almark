@@ -25,8 +25,12 @@ set expandtab
 set foldenable
 set foldmethod=syntax
 
-""" Plugin
+" Mode & pathogen
+set nocompatible
+set nobackup
+execute pathogen#infect()
 
+""" Plugin
 " NERDTree
 autocmd VimEnter * nmap <F3> :NERDTreeToggle<CR>
 autocmd VimEnter * imap <F3> <Esc>:NERDTreeToggle<CR>a
@@ -34,8 +38,4 @@ let NERDTreeQuitOnOpen=0
 let NERDTreeWinSize=30
 let NERDTreeDirArrows=1
 
-" Mode & pathogen
-set nocompatible
-set nobackup
-execute pathogen#infect()
 "================ Personal settings ================
