@@ -3,6 +3,14 @@ mvimrc
 
 This is the repository of personal vim settings.
 
+  * Installation:
+  
+    git clone xxx
+
+    git submodule init
+    
+    git submodule update
+
   * Update plugin:
 
     cd /path/to/plugin
